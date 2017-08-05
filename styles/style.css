@@ -1,18 +1,24 @@
 .square{
   background-color: gainsboro;
   height: 100%;
-  width: 12px;
-  /*margin-left: 1px;
-  margin-right: 1px;*/
+  margin: 0;
   display: inline-block;
 }
 
 .row{
-  height: 12px;
-  /*margin-top: 1px;
-  margin-bottom: 1px;*/
+  margin: 0;
 }
 
 .container{
-  margin: auto;
+  height: 800px;
+  width: 800px;
+  margin: 24px auto;
+}
+
+#set-btn{
+    width: 120px;
+    height: 48px;
+    margin: 12px auto;
+    font-size: 16px;
+    display: block;
 }
