@@ -1,5 +1,5 @@
 body{
-  font-size: 16px;
+  font-size: 14px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -23,7 +23,7 @@ body{
 }
 
 .btn-container{
-  width: 240px;
+  width: 192px;
   margin: 12px auto;
 }
 
@@ -34,6 +34,6 @@ body{
 #set-btn{
     width: 120px;
     height: 36px;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
 }

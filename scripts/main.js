@@ -14,6 +14,10 @@ $(document).ready(function(){
     }
   });
 
+  $('input[name="color"]').click(function() {
+    buildGrid(newGridSize);
+  });
+
   function buildGrid(grid){
     var rowLimit = grid;
     var colLimit = grid;
@@ -29,8 +33,16 @@ $(document).ready(function(){
     }
 
     $(".square").on( "mouseenter", function(){
-      var newOpacity = parseFloat($(this).css("opacity")) + 0.1;
-      $(this).css("opacity", newOpacity);
+      if ($('input[name="color"]:checked').val()=="black"){
+        var newOpacity = parseFloat($(this).css("opacity")) + 0.1;
+        $(this).css("opacity", newOpacity);
+      }
+      else{
+        var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+        $(this).css("background-color", hue);
+        $(this).css("opacity", 1);
+      }
+
     });
 
     var squareWidth = $(".container").width()/grid;
