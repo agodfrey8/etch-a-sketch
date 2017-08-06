@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sketchpad</title>
-<link rel="stylesheet" type="text/css" href="styles/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="scripts/main.js"></script>
+  <title>Sketchpad</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
-<button id="set-btn">Set Grid Size</button>
+  <div class="btn-container">
+    <button id="set-btn">New Grid</button>
+    <form class="color-select">
+      <input type="radio" name="color" value="black" checked> Black<br>
+      <input type="radio" name="color" value="rainbow"> Color
+    <form>
+  </div>
 </body>
 
 </html>

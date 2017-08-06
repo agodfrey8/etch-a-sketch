@@ -4,8 +4,14 @@ $(document).ready(function(){
   buildGrid(startGridSize);
 
   $("#set-btn").click(function(){
-    newGridSize = prompt("Enter new grid size", newGridSize);
-    buildGrid(newGridSize);
+    newGridSize = prompt("Choose a new grid size between 1 and 72", newGridSize);
+    if ((newGridSize <= 72) && (newGridSize >= 1)){
+      buildGrid(newGridSize);
+    }
+    else{
+      alert("Invalid size.")
+      $("#set-btn").click();
+    }
   });
 
   function buildGrid(grid){
@@ -23,7 +29,8 @@ $(document).ready(function(){
     }
 
     $(".square").on( "mouseenter", function(){
-      $(this).css("background-color", "grey");
+      var newOpacity = parseFloat($(this).css("opacity")) + 0.1;
+      $(this).css("opacity", newOpacity);
     });
 
     var squareWidth = $(".container").width()/grid;

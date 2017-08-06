@@ -1,8 +1,14 @@
+body{
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
 .square{
-  background-color: gainsboro;
   height: 100%;
   margin: 0;
   display: inline-block;
+  opacity: 0;
+  background-color: black;
 }
 
 .row{
@@ -10,15 +16,24 @@
 }
 
 .container{
-  height: 800px;
-  width: 800px;
-  margin: 24px auto;
+  height: 720px;
+  width: 720px;
+  margin: 12px auto;
+  border: 1px solid black;
+}
+
+.btn-container{
+  width: 240px;
+  margin: 12px auto;
+}
+
+.color-select{
+  float: right;
 }
 
 #set-btn{
     width: 120px;
-    height: 48px;
-    margin: 12px auto;
+    height: 36px;
     font-size: 16px;
-    display: block;
+    display: inline-block;
 }
